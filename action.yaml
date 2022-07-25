@@ -16,6 +16,9 @@ inputs:
   issue-title:
     description: The custom subtitle for the issue
     required: false
+  plan:
+    descrition: the terraform plan
+    required: true
 runs:
   using: docker
   image: docker://ghcr.io/trstringer/manual-approval:1.6.0-rc.2
