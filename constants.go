@@ -15,6 +15,6 @@ const (
 )
 
 var (
-	approvedWords = []string{"approved", "approve", "lgtm", "yes"}
+	approvedWords = []string{"approved", "approve", "lgtm", "yes", "terraform apply"}
 	deniedWords   = []string{"denied", "deny", "no"}
 )
