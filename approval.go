@@ -61,13 +61,14 @@ Required approvers: %s
 
 Respond %s to continue workflow or %s to cancel.
 
-PLAN:
-%s`,
+PLAN: 
+%s
+ `,
 		a.runURL(),
 		a.issueApprovers,
 		formatAcceptedWords(approvedWords),
 		formatAcceptedWords(deniedWords),
-		a.plan
+		a.plan,
 	)
 	var err error
 	fmt.Printf(
