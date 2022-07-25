@@ -21,4 +21,4 @@ inputs:
     required: true
 runs:
   using: docker
-  image: docker://ghcr.io/pattisd01/manual-approval:1.6.0
+  image: docker://ghcr.io/pattisd01/manual-approval:2.0.0
