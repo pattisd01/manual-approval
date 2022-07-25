@@ -12,9 +12,10 @@ const (
 	envVarApprovers        string = "INPUT_APPROVERS"
 	envVarMinimumApprovals string = "INPUT_MINIMUM-APPROVALS"
 	envVarIssueTitle       string = "INPUT_ISSUE-TITLE"
+	envVarPlan             string = "INPUT_PLAN"
 )
 
 var (
-	approvedWords = []string{"approved", "approve", "lgtm", "yes", "terraform apply"}
+	approvedWords = []string{"approved", "approve", "lgtm", "yes", "terraform-apply"}
 	deniedWords   = []string{"denied", "deny", "no"}
 )
