@@ -14,7 +14,7 @@ push:
 		echo "VERSION is required"; \
 		exit 1; \
 	fi
-	echo -n "${DOCKER_PASSWORD}" | docker login -u "${DOCKER_USERNAME}" --password-stdin
+	echo -n "${DOCKER_PASSWORD}" | docker login ghcr.io -u "${DOCKER_USERNAME}" --password-stdin
 	docker push $(IMAGE_REPO):$$VERSION
 
 .PHONY: test
