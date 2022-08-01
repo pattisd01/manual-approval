@@ -85,6 +85,7 @@ PLAN:
 		Assignees: &a.issueApprovers,
 	})
 	a.approvalIssueNumber = a.approvalIssue.GetNumber()
+	fmt.Printf(`::set-output name=new-issue::%s`, a.approvalIssueNumber )
 	return err
 }
 
